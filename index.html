@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Queijaria Boas Práticas</title>
+  <meta name="description" content="Planilhas de Boas Práticas e Autocontrole da queijaria, com impressão mensal para assinar.">
+  <meta name="theme-color" content="#1E3B2F">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="app" class="carregando">
+    <aside class="lateral" aria-label="Menu principal">
+      <div class="marca">
+        <span class="selo" aria-hidden="true"></span>
+        <div><strong id="nome-queijaria">Queijaria</strong><small>Boas Práticas</small></div>
+      </div>
+      <button class="btn pri lancar" data-acao="menu-lancar">Lançar</button>
+      <nav id="nav-lateral"></nav>
+      <div class="lateral-pe" id="lateral-pe"></div>
+    </aside>
+
+    <header class="topo-movel">
+      <span class="selo" aria-hidden="true"></span>
+      <strong id="nome-queijaria-m">Queijaria</strong>
+    </header>
+
+    <main id="main" tabindex="-1"></main>
+
+    <nav class="barra" id="barra" aria-label="Navegação"></nav>
+    <button class="fab" data-acao="menu-lancar" aria-label="Lançar"></button>
+  </div>
+
+  <div id="login" hidden></div>
+  <div id="modal" hidden><div class="fundo" data-fechar></div><div class="sheet" role="dialog" aria-modal="true"></div></div>
+  <div id="confirm" hidden></div>
+  <div id="toasts" aria-live="polite"></div>
+
+  <script src="config.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
